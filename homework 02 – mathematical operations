@@ -72,3 +72,4 @@ if(sign === '-') {
         
     ${firstNumber} ${sign} ${secondNumber} = ${result}`);
 }
+
