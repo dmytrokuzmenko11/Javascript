@@ -1,0 +1,74 @@
+
+
+// ---------- switch ----------
+
+// numbers, sign
+let firstNumber = +prompt('Enter first number');
+let sign = prompt('Enter sign (+, -, *, /)');
+let secondNumber = +prompt('Enter second number');
+
+let result;
+
+// math operations
+switch (sign) {
+
+    case '-':
+        result = firstNumber - secondNumber;
+        console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+        ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+        break;
+    case '+':
+        result = firstNumber + secondNumber;
+        console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+        ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+        break;
+    case '*':
+        result = firstNumber * secondNumber;
+        console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+        ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+        break;
+    case '/':
+        result = firstNumber / secondNumber;
+        console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+        ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+        break;
+
+}
+
+
+// ---------- if...else ----------
+
+// numbers, sign
+let firstNumber = +prompt('Enter first number');
+let sign = prompt('Enter sign (+, -, *, /)');
+let secondNumber = +prompt('Enter second number');
+
+let result;
+
+
+// math operations
+if(sign === '-') {
+    result = firstNumber - secondNumber;
+    console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+    ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+} else if (sign === '+') {
+    result = firstNumber + secondNumber;
+    console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+    ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+} else if (sign === '*') {
+    result = firstNumber * secondNumber;
+    console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+    ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+} else if (sign === '/') {
+    result = firstNumber / secondNumber;
+    console.log(`Користувач ввів ${firstNumber} та ${secondNumber}:
+        
+    ${firstNumber} ${sign} ${secondNumber} = ${result}`);
+}
