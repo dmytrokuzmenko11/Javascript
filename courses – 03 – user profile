@@ -1,0 +1,52 @@
+
+
+// User Name
+let firstName = prompt('What is your name', 'Name').trim();
+firstName = firstName[0].toUpperCase() + firstName.slice(1).toLowerCase();
+
+let lastName = prompt('What is your last name', 'Lastname').trim();
+lastName = lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
+
+
+// User Email
+let userEmail = prompt('Enter your email').replaceAll().toLowerCase();
+
+let checkUserEmail;
+
+if (!String(userEmail).includes('@')) {
+    alert(`not valid email ${userEmail} (symbol @ does not exist)`);
+    checkUserEmail = `not valid email <b>${userEmail}</b> (symbol @ does not exist)`;
+} 
+else if (String(userEmail).startsWith('@')) {
+    alert(`not valid email ${userEmail} (symbol @ found at the first place)`);
+    checkUserEmail = `not valid email <b>${userEmail}</b> (symbol @ found at the first place)`;
+} 
+else if (String(userEmail).endsWith('@')) {
+    alert(`not valid email ${userEmail} (symbol @ found at the last place)`);
+    checkUserEmail = `not valid email <b>${userEmail}</b> (symbol @ found at the last place)`;
+} 
+else {
+    alert(`Your email ${userEmail} has been accepted`);
+    checkUserEmail = `<b>${userEmail}</b>`;
+};
+
+
+// User Date
+dateOfBirth = +prompt('Enter your date of birth').replace(/\s/g, '').trim();
+
+today = new Date();
+thisYear = today.getFullYear();
+userAge = thisYear - dateOfBirth;
+console.log(userAge);
+
+
+// Data Output 
+document.write(`
+    <ul>
+        <li>Full name: <b>${firstName} ${lastName}</b></li>
+        <li>Email: ${checkUserEmail}</li>
+        <li>Age: <b>${userAge}</b></li>
+    </ul>
+`);
+
+
