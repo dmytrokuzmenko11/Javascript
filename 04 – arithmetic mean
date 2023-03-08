@@ -1,0 +1,13 @@
+
+
+let firstNumber = +prompt('Enter first number', '15'); 
+let secondNumber = +prompt('Enter second number', '30'); 
+let thirdNumber = +prompt('Enter third number', '45');
+console.log(firstNumber, secondNumber, thirdNumber)
+
+let averageValue = (firstNumber + secondNumber + thirdNumber) / 3;
+console.log(averageValue);
+
+alert(`The arithmetic mean is equal to ${averageValue}`);
+
+
