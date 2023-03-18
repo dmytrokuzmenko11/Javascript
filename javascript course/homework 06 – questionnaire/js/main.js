@@ -62,3 +62,4 @@ console.log(questionFive, sumOfPoints);
 alert(`Your result is ${sumOfPoints} points.`);
 
 
+

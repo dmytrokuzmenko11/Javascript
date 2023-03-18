@@ -27,5 +27,3 @@ for (a; a <= b; a += h) {
 }
 
 document.write('<br>', `${sumOfFactorials} is the sum of the factorials.`);
-
-
